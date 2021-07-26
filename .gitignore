@@ -1,5 +1,21 @@
+# Project Stuffs
 venv/
+blogpy/__pycache__/
+blog/__pycache__/
+
+# Database
+db.sqlite3
 
 # mac stuff
 .DS_Store
 .idea/
+
+# migrations
+blog/migrations
+
+# Credentials
+.env
+note.md
+
+# Static files
+files/
