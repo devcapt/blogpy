@@ -126,12 +126,18 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 
-# CKEditor Settings
-# Static Files
-STATIC_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-STATIC_URL = '/static/'
+# Static Files
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles') # to collect staticfiles
+STATIC_URL = '/static/' 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+] # this dirs childs will be collected on 'staticfiles/' folder
 
 # CKEditor
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 CKEDITOR_UPLOAD_PATH = "uploads/"
+
+# Media URL
+MEDIA_URL = 'files/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'')

@@ -1,10 +1,15 @@
+# made by pip freeze > requirements/requirements.txt
+
+autopep8==1.5.7
 Django==2.2
 django-ckeditor==6.1.0
 django-js-asset==1.2.2
 psycopg2-binary==2.9.1
+pycodestyle==2.7.0
 pytz==2021.1
 sqlparse==0.4.1
 termcolor==1.1.0
+toml==0.10.2
 
 # activate the venv
 # run "pip install -r requirements/requirements.txt"
